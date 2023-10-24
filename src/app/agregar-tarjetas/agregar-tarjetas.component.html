@@ -1,0 +1,28 @@
+<ion-card>
+  <ion-card-header>
+    Agregar Tarjeta
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-label>Número de Tarjeta</ion-label>
+      <ion-input [(ngModel)]="nuevaTarjeta.numero" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha de Validez</ion-label>
+      <ion-datetime display-format="MM/YYYY" [(ngModel)]="nuevaTarjeta.fechaValidez"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>CVV</ion-label>
+      <ion-input [(ngModel)]="nuevaTarjeta.cvv" type="password" maxlength="3"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Apellido</ion-label>
+      <ion-input [(ngModel)]="nuevaTarjeta.apellido" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-input [(ngModel)]="nuevaTarjeta.nombre" type="text"></ion-input>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+<ion-button expand="full" (click)="agregarTarjeta()">Agregar</ion-button>
