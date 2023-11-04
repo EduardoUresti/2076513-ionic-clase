@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, Router, RouterModule, Routes } from '@angular/router';
+import { AgregarTarjetasComponent } from './agregar-tarjetas/agregar-tarjetas.component';
+import { TarjetasComponent } from './tarjetas/tarjetas.component';
 
 const routes: Routes = [
   {
@@ -11,11 +13,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  { path: 'tarjetas', component: TarjetasComponent },
+  { path: 'agregarTarjetas', component: AgregarTarjetasComponent },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    RouterModule
   ],
   exports: [RouterModule]
 })

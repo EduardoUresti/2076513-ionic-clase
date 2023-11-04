@@ -8,7 +8,6 @@
   <ion-grid>
     <ion-row>
       <ion-col size="6">
-        <!-- Lista de tarjetas -->
         <ion-card *ngFor="let tarjeta of tarjetas">
           <ion-card-header>
             {{ tarjeta.titulo }}
@@ -23,7 +22,6 @@
         </ion-card>
       </ion-col>
       <ion-col size="6">
-        <!-- Agregar tarjetas -->
         <app-agregar-tarjetas></app-agregar-tarjetas>
       </ion-col>
     </ion-row>

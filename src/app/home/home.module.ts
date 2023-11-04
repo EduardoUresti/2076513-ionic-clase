@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 import { AgregarTarjetasComponent } from '../agregar-tarjetas/agregar-tarjetas.component';
 import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 import { HomePageRoutingModule } from './home-routing.module';
+import { LoginComponent } from '../login/login.component';
 
 
 @NgModule({

@@ -5,9 +5,11 @@ import { AgregarTarjetasComponent } from '../agregar-tarjetas/agregar-tarjetas.c
 import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'tarjetas', pathMatch: 'full' },
-  { path: 'tarjetas', component: TarjetasComponent },
-  { path: 'agregarTarjetas', component: AgregarTarjetasComponent },
+  {
+    path: '',
+    component: HomePage,
+  },
+
 ];
 
 @NgModule({
